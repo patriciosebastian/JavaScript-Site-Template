@@ -1,3 +1,5 @@
+/***** Globals *****/
+
 :root {
   --primary-color: #1d5888;
   --secondary-color: #ff993b;
@@ -9,9 +11,13 @@ body {
   color: var(--dark-color);
 }
 
+/***** Nav  *****/
+
 nav {
   background-color: var(--dark-color);
 }
+
+/***** Main *****/
 
 main > .container {
   padding: 60px 15px 0;
@@ -44,6 +50,12 @@ h6 {
 } */
 /* add above classes to icons in the HTML to enable custom color styles */
 
+.checklist > li i {
+    color: var(--primary-color);
+}
+
+/***** Footer *****/
+
 footer {
   background-color: var(--dark-color);
   padding-right: 1rem;
@@ -57,4 +69,13 @@ footer .social > a {
 footer .social > a:hover {
   opacity: 0.9;
   color: var(--primary-color);
+}
+
+/***** Code Page *****/
+
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
 }
